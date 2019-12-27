@@ -1,0 +1,1 @@
+{"darkroom":{"$func":["uninstall","init","tick"],"game":{"$func":["picksize","countdown","end","randomize","prepare","start"],"gamesize":{"$func":["start_size_15","set_size_15","start_size_11","set_size_13","start_size_9","set_size_9","set_size_11","start_size_13"]}}}}

@@ -1,0 +1,5 @@
+scoreboard objectives remove game_phase
+scoreboard objectives remove game_wave
+scoreboard objectives remove game_wave_count
+scoreboard objectives remove game_size
+scoreboard objectives remove game_size_inv

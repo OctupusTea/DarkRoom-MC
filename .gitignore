@@ -1,0 +1,8 @@
+# Project files
+.vs/
+.vscode/
+
+# Minecraft player-based data
+DarkRoom-MC/advancements/*
+DarkRoom-MC/playerdata/*
+DarkRoom-MC/stats/*
