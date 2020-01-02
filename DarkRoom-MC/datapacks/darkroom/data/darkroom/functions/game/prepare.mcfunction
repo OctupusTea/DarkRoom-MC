@@ -26,17 +26,20 @@ execute as @e[tag=splitter,tag=cw,tag=pregame] at @s run summon armor_stand ~ 15
 execute as @e[tag=splitter,tag=ccw,tag=pregame] at @s run summon armor_stand ~ 15 ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["ccw","splitter","item","ingame"],ArmorItems:[{},{},{},{Count:1b,id:"light_blue_stained_glass_pane"}],Pose:{Head:[0.0f,-45.0f,0.0f]}}
 execute as @e[tag=splitter,tag=ccw,tag=pregame] at @s run summon armor_stand ~ 15 ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["ccw","splitter","item","ingame"],ArmorItems:[{},{},{},{Count:1b,id:"white_stained_glass"}],Pose:{Head:[0.0f,0.0f,0.0f]}}
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:creeper_head"}}] run tag @s add creeper_player
-execute as @a[tag=creeper_player] at @s run summon creeper ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_creeper"]}
-execute as @a[tag=creeper_player] run tag @s add player
+execute as @a[nbt={SelectedItem:{id:"minecraft:redstone_block"}}] run tag @s add red_player
+execute as @a[tag=red_player] at @s run summon skeleton ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_red"],ArmorItems:[{},{},{},{Count:1b,id:leather_helmet,tag:{display:{color:11546150}}}]}
+execute as @a[tag=red_player] run tag @s add player
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:skeleton_skull"}}] run tag @s add skeleton_player
-execute as @a[tag=skeleton_player] at @s run summon skeleton ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_skeleton"]}
-execute as @a[tag=skeleton_player] run tag @s add player
+execute as @a[nbt={SelectedItem:{id:"minecraft:emerald_block"}}] run tag @s add green_player
+execute as @a[tag=green_player] at @s run summon skeleton ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_green"],ArmorItems:[{},{},{},{Count:1b,id:leather_helmet,tag:{display:{color:8439583}}}]}
+execute as @a[tag=green_player] run tag @s add player
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:zombie_head"}}] run tag @s add zombie_player
-execute as @a[tag=zombie_player] at @s run summon zombie ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_zombie"]}
-execute as @a[tag=zombie_player] run tag @s add player
+execute as @a[nbt={SelectedItem:{id:"minecraft:lapis_block"}}] run tag @s add blue_player
+execute as @a[tag=blue_player] at @s run summon skeleton ~ 16 ~ {NoAI:1b,Invulnerable:1b,Tags:["player_green"],ArmorItems:[{},{},{},{Count:1b,id:leather_helmet,tag:{display:{color:3949738}}}]}
+execute as @a[tag=blue_player] run tag @s add player
+
+execute as @a[tag=player] at @s run tp @s ~ ~ ~ facing ~ ~-1 ~
+scoreboard players set @a right_click 0
 
 execute if score @e[tag=darkroom_oracle,limit=1] game_size matches 4 run spreadplayers 0 0 2.0 4.0 false @a[tag=player]
 execute if score @e[tag=darkroom_oracle,limit=1] game_size matches 5 run spreadplayers 0 0 2.0 5.0 false @a[tag=player]

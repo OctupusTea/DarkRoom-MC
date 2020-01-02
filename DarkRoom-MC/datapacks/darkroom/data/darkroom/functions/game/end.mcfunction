@@ -2,14 +2,14 @@ kill @e[tag=ingame]
 fill -20 16 -20 20 16 20 air
 fill -20 32 -20 20 33 20 air
 
-tag @a remove creeper_player
-kill @e[tag=player_creeper]
+tag @a remove red_player
+kill @e[tag=player_red]
 
-tag @a remove skeleton_player
-kill @e[tag=player_skeleton]
+tag @a remove green_player
+kill @e[tag=player_green]
 
-tag @a remove zombie_player
-kill @e[tag=player_zombie]
+tag @a remove blue_player
+kill @e[tag=player_blue]
 
 tag @a remove player
 
