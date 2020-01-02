@@ -1,24 +1,26 @@
 # DarkRoom - MC
 
 Darkroom - A Minecraft Adaption (WIP)
+
 Minigame map adaption of the game DarkRoom
 
 
 ## What is This?
 
-This is a side project of DarkRoom, a game developed by Group #16 in the class `Game Design and Programming 2019` from National Taiwan University.
+This is a side project of DarkRoom, a game developed by Group #16 in the class `Game Design and Programming 2019` of National Taiwan University.
 
-The core game has its own private repository, this repository (OctupusTea/DarkRoom-MC) is dedicated for the Minecraft adaption only.
+The core game has its own private repository, this repository is dedicated for the Minecraft adaption only.
 
 
 ## Who is in Charge of This?
 
-[Octupus Tea](https:/github.com/octupustea), as the only Minecraft player in the team, take full responsibility to develope the Minecraft minigame adaption.
+[Octupus Tea](https:/github.com/octupustea), the only Minecraft player in the team.
 
 
 ## Installation
 
 The map has not been done yet.
+
 However, if you insist, the game can be installed by the following step:
 
 - Download a release and unzip, or `git clone` to get cheeck developing progress.
