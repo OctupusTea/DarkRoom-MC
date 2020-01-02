@@ -40,6 +40,6 @@ Here are the default location where Minecraft stores data:
 Then you should see the directories of `saves`, `resourcepacks`, etc. If any of which doesn't exist, create a new directory.
 
 
-## So... You Have Lots of Time Goffing Around, Aren't You?
+## So... You Have Lots of Time Goofing Around, Aren't You?
 
 *Well, yes, but actually no.* **Sweats nervously\**
